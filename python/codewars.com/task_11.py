@@ -22,14 +22,20 @@
 
     Help:
 
-    Symbol    Value
-    I          1
-    V          5
-    X          10
-    L          50
-    C          100
-    D          500
-    M          1000
+    Value    Symbol
+    1000:   'M',
+    900:    'CM',
+    500:    'D',
+    400:    'CD',
+    100:    'C',
+    90:     'XC',
+    50:     'L',
+    40:     'XL',
+    10:     'X',
+    9:      'IX',
+    5:      'V',
+    4:      'IV',
+    1:      'I'
 
     Remember that there can't be more than 3 identical symbols in a row.
 
@@ -37,26 +43,24 @@
 
 """
 
-# assert.strictEqual(solution(1000), 'M', '1000 should, "M"')
-# assert.strictEqual(solution(1001), 'MI', '1001 should, "MI"')
-# assert.strictEqual(solution(1990), 'MCMXC', '1990 should, "MCMXC"')
-# assert.strictEqual(solution(2007), 'MMVII', '2007 should, "MMVII"')
-# assert.strictEqual(solution(2008), 'MMVIII', '2008 should, "MMVIII"')
-
-import math
-
 
 def solution(number: int) -> None:
 
     symbol: dict[str, int] = {
 
-        1:      "I",
-        5:      "V",
-        10:     "X",
-        50:     "L",
-        100:    "C",
-        500:    "D",
-        1000:   "M"
+        1000:   'M',
+        900:    'CM',
+        500:    'D',
+        400:    'CD',
+        100:    'C',
+        90:     'XC',
+        50:     'L',
+        40:     'XL',
+        10:     'X',
+        9:      'IX',
+        5:      'V',
+        4:      'IV',
+        1:      'I'
     }
 
     # Simple Case
@@ -81,4 +85,4 @@ def solution(number: int) -> None:
     return value
 
 
-print(solution(2008))
+print(solution(2007))

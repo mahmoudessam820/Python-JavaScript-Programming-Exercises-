@@ -16,10 +16,11 @@
     Output: [0,1]
     Output: Because nums[0] + nums[1] == 9, we return [0, 1].
 
+    Task URL: https://leetcode.com/problems/two-sum
 
 """
 
-def towSum(nums, target):
+def tow_sum(nums, target):
     pre_map = {}
 
     for i, n in enumerate(nums):
@@ -30,4 +31,4 @@ def towSum(nums, target):
 
         pre_map[n] = i
 
-print(towSum([2, 10, 7, 11, 15], 9))
+print(tow_sum([2, 10, 7, 11, 15], 9))
