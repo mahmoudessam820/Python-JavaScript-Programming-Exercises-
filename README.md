@@ -23,4 +23,4 @@ Once you've identified a problem, come up with a plan to solve it. A problem and
 
 ## Feedback
 
-If you have any feedback, please reach out to us at mahmoudelkaruony220@gmail.com 📧
+If you have any feedback, please reach out to me at mahmoudelkaruony220@gmail.com 📧
