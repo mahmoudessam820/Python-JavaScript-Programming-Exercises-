@@ -33,8 +33,8 @@ function isIsogramOne(str) {
     }
     return result.length === charArr.length;
 }
-console.log(isIsogram('Dermatoglyphics'));
-console.log(isIsogram('aba'));
+console.log(isIsogramOne('Dermatoglyphics'));
+console.log(isIsogramOne('aba'));
 
 
 // Another solution 
