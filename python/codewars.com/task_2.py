@@ -1,7 +1,8 @@
 '''
     Highest and Lowest
 
-    In this little assignment you are given a string of space separated numbers 
+    In this little assignment you are given a string of space 
+    separated numbers. 
     And have to return the highest and lowest number.
 
     Examples: 
@@ -21,10 +22,12 @@
 
 '''
 
-def high_and_low(numbers):
 
-    high = str(max([int(number) for number in numbers.split()]))
-    low = str(min([int(number) for number in numbers.split()]))
+def high_and_low(numbers: str) -> str:
+
+    high: str = str(max([int(number) for number in numbers.split()]))
+    low: str = str(min([int(number) for number in numbers.split()]))
     return f"The highest number in the lest: {high} The lowest number in the lest: {low}"
-    
+
+
 print(high_and_low("13 973 743 -390 -997 -757 495 169 -852 -378 827 -80 -634 866 -848"))

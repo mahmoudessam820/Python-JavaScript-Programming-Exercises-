@@ -23,5 +23,38 @@
 */
 
 function scramble(str1, str2) {
-    return false;
-}
+
+    const stringOne = str1.split('');
+    const stringTwo = str2.split('');
+    const charCounts = {};
+
+    for (let i = 0; i < stringOne.length; i++) {
+
+        const char = stringOne[i];
+
+        if (charCounts[char]) { // character already seen
+
+            charCounts[char]++;
+
+        } else {  // first time seeing character
+
+            charCounts[char] = 1;
+        }
+    };
+
+    for (let i = 0; i < stringTwo.length; i++) {
+
+        const char = stringTwo[i]
+
+        if (!charCounts[char]) {
+
+            return false;
+        }
+        charCounts[char]--;
+    };
+
+    return true;
+
+};
+
+console.log(scramble('scriptjavx', 'javascript'))

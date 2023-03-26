@@ -23,9 +23,11 @@
 // My solution
 
 function isIsogramOne(str) {
+
     let strLower = str.toLowerCase(); // convert to lowercase
     let charArr = strLower.split(''); // split into array 
     let result = []; // create empty array to store unique characters
+
     for (let i = 0; i < charArr.length; i++) { // loop through array
         if (result.indexOf(charArr[i]) === -1) { // if chraacter is not in array
             result.push(charArr[i]); // push character to array 
