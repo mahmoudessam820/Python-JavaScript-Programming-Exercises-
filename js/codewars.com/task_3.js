@@ -47,6 +47,7 @@ function solution(number) {
 
     // convert the number to a roman numeral
     let symbol = {
+
         1: "I",
         4: "IV",
         5: "V",
@@ -61,9 +62,11 @@ function solution(number) {
         900: "CM",
         1000: "M",
     };
+
     let result = "";
     let numbers = Object.keys(symbol);
     let romanNumber = Object.values(symbol);
+
     let decimal = numbers.map((num) => {
         return parseInt(num);
     });
@@ -77,7 +80,9 @@ function solution(number) {
             result += reverseRomanNumbers[i];
             number -= reverseDecimalNumbers[i];
         }
+
     }
+
     return result;
 }
 
