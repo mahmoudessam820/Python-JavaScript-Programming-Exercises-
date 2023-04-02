@@ -35,7 +35,8 @@ function maskify(cc) {
 
     let start = creditCardNumber.slice(0, -4);
     let end = creditCardNumber.slice(-4);
-    let hash = '#'
+    let hash = '#';
+
     let hashedCreditCardNumber = hash.repeat(start.length).concat(end);
 
     return hashedCreditCardNumber;
