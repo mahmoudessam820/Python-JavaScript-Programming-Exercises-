@@ -18,12 +18,26 @@
 */
 
 
-function domainName(url) {
+function domainNameOne(url) {
 
     return url.replace(/^https?:\/\//, "").replace(/^www\./, "").replace(/\..*/, "");
 
 };
 
-console.log(domainName('http://github.com/carbonfive/raygun'));
-console.log(domainName('http://www.zombie-bites.com'));
-console.log(domainName('https://www.cnet.com'));
+
+function domainNameTwo(url) {
+
+    return url.match(/(?:http(?:s)?:\/\/)?(?:w{3}\.)?([^\.]+)/i)[1];
+}
+
+
+function domainNameThree(url) {
+
+    return url.replace(/.+\/\/|www.|\..+/g, '');
+}
+
+
+console.log(domainNameThree('http://github.com/carbonfive/raygun'));
+console.log(domainNameThree('http://www.zombie-bites.com'));
+console.log(domainNameThree('https://www.cnet.com'));
+console.log(domainNameThree('https://www.google.com'));
