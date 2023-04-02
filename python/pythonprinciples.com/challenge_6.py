@@ -58,7 +58,3 @@ def has_double_letters(letters):
             print(f"There were tow {letters[letter]} at postion {str(letter)}")
 
 print(double_letters("nono"))
-
-
-# The soultion video 
-# URL: https://www.youtube.com/watch?v=Mp2H9W8OlI0

@@ -21,7 +21,11 @@
     Task URI: https://www.codewars.com/kata/5277c8a221e209d3f6000b56
 
 '''
+
+# My Solution
+
 def validBraces(string):
+
 	brackets = ['()', '{}', '[]']
 	while any(x in string for x in brackets):
 		for br in brackets:
@@ -31,7 +35,10 @@ def validBraces(string):
 print(validBraces("(){}[]"))
 
 
+# Another Solution
+
 def validBraces(string):
+
     braces = {"(": ")", "[": "]", "{": "}"}
     stack = []
     for character in string:
