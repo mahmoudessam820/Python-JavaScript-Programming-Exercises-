@@ -30,9 +30,11 @@
     Task URI: https://www.codewars.com/kata/583203e6eb35d7980400002a
 '''
 
+
 def count_smileys(arr):
     valid_smiley = [':)', ':D', ';-D', ':~)', ';~)', ';D', ':-D', ':-)', ';~D']
-    smile = [x  for x in arr if x in valid_smiley]
+    smile = [x for x in arr if x in valid_smiley]
     return len(smile)
+
 
 print(count_smileys([':)', ';(', ';}', ':-D', ';~D']))
