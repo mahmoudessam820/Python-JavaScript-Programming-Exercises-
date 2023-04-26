@@ -13,10 +13,6 @@
 
 '''
 
-import re
-
-
-items1 = [9, 0, 0, 9, 1, 2, 0, 1, 0, 1, 0, 3, 0, 1, 9, 0, 0, 0, 0, 9]
 
 def move_zeros(array):
     zeros = [zero for zero in array if zero == 0]
@@ -24,10 +20,12 @@ def move_zeros(array):
     new_array.extend(zeros)
     return new_array
 
+# Another solution
 
 
 def move_zeros(arr):
     l = [i for i in arr if isinstance(i, bool) or i != 0]
     return l+[0] * (len(arr)-len(l))
 
-print(move_zeros(items1))
+
+print(move_zeros([1, 0, 1, 2, 0, 1, 3]))
