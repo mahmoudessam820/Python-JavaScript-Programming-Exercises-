@@ -51,17 +51,12 @@ a2 = [121, 144, 19, 161, 19, 144, 19, 11]
 b2 = [11*11, 121*121, 144*144, 190*190, 161*161, 19*19, 144*144, 19*19]
 
 
-
 def comp(array1, array2):
 
     a = [number * number for number in array1]
     b = array2
 
-    if len(array1) == len(array2) and sum(a) == sum(b): 
+    if len(array1) == len(array2) and sum(a) == sum(b):
         return True
     else:
         return False
-
-# print(comp(a, b)) -> True
-# print(comp(a1, b1)) -> False
-# print(comp(a2, b2)) -> False
