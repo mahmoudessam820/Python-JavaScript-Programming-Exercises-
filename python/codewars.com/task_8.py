@@ -41,22 +41,8 @@
 
 '''
 
-a = [121, 144, 19, 161, 19, 144, 19, 11]
-b = [11*11, 121*121, 144*144, 19*19, 161*161, 19*19, 144*144, 19*19]
 
-a1 = [121, 144, 19, 161, 19, 144, 19, 11]
-b1 = [11*21, 121*121, 144*144, 19*19, 161*161, 19*19, 144*144, 19*19]
-
-a2 = [121, 144, 19, 161, 19, 144, 19, 11]
-b2 = [11*11, 121*121, 144*144, 190*190, 161*161, 19*19, 144*144, 19*19]
-
-
-def comp(array1, array2):
-
-    a = [number * number for number in array1]
-    b = array2
-
-    if len(array1) == len(array2) and sum(a) == sum(b):
-        return True
-    else:
+def comp(a, b):
+    if a is None or b is None:
         return False
+    return sorted([i ** 2 for i in a]) == sorted(b)
