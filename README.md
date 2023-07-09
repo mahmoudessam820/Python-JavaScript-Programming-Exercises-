@@ -1,4 +1,4 @@
-# Python 🐍 & JavaScript 🐲 Programming 💡 Exercises 🧠
+# Python 🐍 & JavaScript 🐲 & SQL 📊 Programming 💡 Exercises 🧠
 
 ## Problems Solving Skills
 

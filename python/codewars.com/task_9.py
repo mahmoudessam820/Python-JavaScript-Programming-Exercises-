@@ -16,15 +16,23 @@
 
 '''
 
-def to_camel_case(text):
+
+def to_camel_case(text: str) -> str:
+
     if len(text) > 1:
-        if not text[0].isupper() :
-            case_one = ''.join(x for x in text.title() if x.isalnum())
-            return case_one[0].lower() + case_one[1:] 
+
+        if not text[0].isupper():
+
+            case_one: str = ''.join(x for x in text.title() if x.isalnum())
+            return case_one[0].lower() + case_one[1:]
+
         elif text[0].isupper():
-            case_tow = ''.join(x for x in text.title() if x.isalnum())
+
+            case_tow: str = ''.join(x for x in text.title() if x.isalnum())
             return case_tow
+
     else:
         return ''
+
 
 print(to_camel_case('The-Stealth-Warrior'))
