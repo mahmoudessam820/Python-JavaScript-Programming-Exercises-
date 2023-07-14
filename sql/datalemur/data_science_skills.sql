@@ -5,6 +5,9 @@
 -- Write a query to list the candidates who possess all of the required skills for the job. 
 -- Sort the output by candidate ID in ascending order.
 
+-- Note ⚠️:
+-- You have to visit the task URL to fully understand what the task needs if you want to add a solution or test your solution!
+
 -- Task URL: https://datalemur.com/questions/matching-skills 
 
 

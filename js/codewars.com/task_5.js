@@ -6,7 +6,7 @@
  *  The method must return a boolean and be case insensitive.
  *  The string can contain any char.
 
- *  Examples input/output:
+ *  Examples:
 
  *  XO("ooxx")      => true
  *  XO("xooxx")     => false
@@ -36,6 +36,7 @@ function XO(str) {
     if (x !== o && compare !== []) {
         return false
     };
+
     if (compare !== [] || compare === []) {
         return true
     };
