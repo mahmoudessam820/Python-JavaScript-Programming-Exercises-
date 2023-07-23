@@ -1,10 +1,9 @@
 """
   Palindrome Number
 
-  Given an integer x, return true if x is palindrome integer.
-
-  An integer is a palindrome when it reads the same backward as 
-  forward. For example, 121 is palindrome while 123 is not.
+  - Given an integer x, return true if x is palindrome integer.
+  - An integer is a palindrome when it reads the same backward as forward. 
+  - For example, 121 is palindrome while 123 is not.
 
 
   Example 1:
@@ -28,10 +27,13 @@
 
 # My Solution
 
+
 def isPalindrome(x):
+
     pal_num = str(x)
 
     while len(pal_num) > 1:
+
         head = pal_num[0]
         tail = pal_num[-1]
         pal_num = pal_num[1:-1]

@@ -1,7 +1,8 @@
 """
     Contains Duplicate
 
-    - Given an integer array nums, return true if any value appears at least twice in the array.
+    - Given an integer array nums, return true,
+    - If any value appears at least twice in the array.
     - And return false if every element is distinct.
 
     Examples: 
@@ -21,10 +22,6 @@
 
 
 def containsDuplicate(nums: list[int]) -> bool:
-    """
-    :type nums: List[int]
-    :rtype: bool
-    """
 
     filter_nums: list[int] = [i for i in set(nums)]
     return len(filter_nums) != len(nums)
