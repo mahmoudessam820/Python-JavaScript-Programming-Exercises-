@@ -1,6 +1,6 @@
 '''
     Simple Encryption #1 - Alternating Split 💥
-
+    
     - Implement a pseudo-encryption algorithm which given a string S and an integer N
     - Concatenates all the odd-indexed characters of S with all 
     - The even-indexed characters of S.
