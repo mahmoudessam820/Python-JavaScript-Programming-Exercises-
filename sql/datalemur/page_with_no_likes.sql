@@ -14,7 +14,7 @@
 
 SELECT 
     p.page_id 
-FROM 
+FROM
     pages p 
 LEFT JOIN 
     page_likes l
