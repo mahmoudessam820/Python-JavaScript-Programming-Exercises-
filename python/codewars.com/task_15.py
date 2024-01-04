@@ -62,7 +62,4 @@ def get_pins(observed):
     return variations
 
 
-observed_pin = "1357"
-variations = get_pins(observed_pin)
-
-print(variations)
+print(get_pins("1357"))

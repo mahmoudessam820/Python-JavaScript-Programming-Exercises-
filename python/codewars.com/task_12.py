@@ -28,7 +28,14 @@
 
 
 def maskify(cc):
-
+    """
+    Masks the credit card number by replacing 
+        all but the last four characters with '#'
+    Args:
+        cc (str): The credit card number as a string
+    Returns:
+        str: The masked credit card number
+    """
     credit_card = str(cc)
 
     if len(credit_card) == 1 or len(credit_card) == 4:
