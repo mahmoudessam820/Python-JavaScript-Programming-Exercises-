@@ -22,18 +22,12 @@
 
 def is_merge(s, part1, part2):
 
-    text = part1 + part2 
-    index1 = 0
-    index2 = 0
-
-    if len(text) != len(s): return False
-
-    for char in s:
-        if index1 < len(part1) and char == part1[index1]: 
-            index1 += 1 
-        elif index2 < len(part2) and char == part2[index2]:
-            index2 += 1
-
-    return index1 == len(part1) and index2 == len(part2) 
+    if not s:
+        return not part1 and not part2
+    if part1 and s[0] == part1[0] and is_merge(s[1:], part1[1:], part2):
+        return True
+    if part2 and s[0] == part2[0] and is_merge(s[1:], part1, part2[1:]):
+        return True
+    return False
 
 print(is_merge('codewars', 'cdw', 'oears'))
