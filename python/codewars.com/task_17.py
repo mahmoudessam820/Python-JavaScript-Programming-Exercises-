@@ -1,27 +1,35 @@
 """
-    parseInt() reloaded
+    Next smaller number with the same digits
 
-    In this kata we want to convert a string into an integer. 
-    The strings simply represent the numbers in words.
+    Complete the function that
+
+    - Write a function that takes a positive integer and returns the next smaller 
+    - positive integer containing the same digits.
 
     Examples:
 
-    "one" => 1
-    "twenty" => 20
-    "two hundred forty-six" => 246
-    "seven hundred eighty-three thousand nine hundred and nineteen" => 783919
+    next_smaller(21) == 12
+    next_smaller(531) == 513
+    next_smaller(2071) == 2017
 
-    Additional Notes:
+    
+    - Return -1 (for Haskell: return Nothing, for Rust: return None), when there is no smaller number that contains 
+    - the same digits. 
+    - Also return -1 when the next smaller number with the same digits would require the leading digit to be zero.
 
-    The minimum number is "zero" (inclusively)
-    The maximum number, which must be supported is 1 million (inclusively)
-    The "and" in e.g. "one hundred and twenty-four" is optional, in some cases it's present and in others it's not
-    All tested numbers are valid, you don't need to validate them
+    next_smaller(9) == -1
+    next_smaller(135) == -1
+    next_smaller(1027) == -1  # 0721 is out since we don't write numbers with leading zeros
 
+    - some tests will include very large numbers.
+    - test data only employs positive integers.
 
-    Task URL: https://www.codewars.com/kata/525c7c5ab6aecef16e0001a5/train/python
+    
+    Task URL: https://www.codewars.com/kata/5659c6d896bc135c4c00021e/train/python
 
 """
 
-def parse_int(string: str):
+def next_smaller(n: int) -> int:
     ...
+
+print(next_smaller(1))

@@ -19,20 +19,16 @@
 
 
 function domainNameOne(url) {
-
     return url.replace(/^https?:\/\//, "").replace(/^www\./, "").replace(/\..*/, "");
-
 };
 
 
 function domainNameTwo(url) {
-
     return url.match(/(?:http(?:s)?:\/\/)?(?:w{3}\.)?([^\.]+)/i)[1];
 }
 
 
 function domainNameThree(url) {
-
     return url.replace(/.+\/\/|www.|\..+/g, '');
 }
 
