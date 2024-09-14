@@ -24,3 +24,7 @@ print(not None != "")
 # Therefore, print(not None != "") will output False
 
 # The correct answer is: b- False 😉
+
+
+# Python's None: Null in Python
+# Read more: https://bityl.co/S1Uc
