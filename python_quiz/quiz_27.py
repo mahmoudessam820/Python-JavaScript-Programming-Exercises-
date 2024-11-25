@@ -26,5 +26,3 @@ print(not None != "")
 # The correct answer is: b- False 😉
 
 
-# Python's None: Null in Python
-# Read more: https://bityl.co/S1Uc
