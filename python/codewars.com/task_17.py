@@ -30,6 +30,14 @@
 """
 
 def next_smaller(n: int) -> int:
-    ...
+    left = -1 
+    rigth = 0 
+    
+    if n == 'Haskell':
+        return 'Nothing'
+    elif n == 'Rust':
+        return None
 
-print(next_smaller(1))
+    return 0
+
+print(next_smaller('Rust'))

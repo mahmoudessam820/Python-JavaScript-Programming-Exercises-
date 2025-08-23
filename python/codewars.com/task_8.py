@@ -46,3 +46,5 @@ def comp(a, b):
     if a is None or b is None:
         return False
     return sorted([i ** 2 for i in a]) == sorted(b)
+
+print(comp([], []))
