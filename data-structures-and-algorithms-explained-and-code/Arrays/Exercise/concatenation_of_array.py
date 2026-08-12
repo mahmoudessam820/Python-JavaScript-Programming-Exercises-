@@ -13,7 +13,7 @@
     - How can you use the input array to populate the output array twice?
     - Try writing out the indices for a small example (e.g., nums = [1, 2]) to see the pattern.
 
-    Visual code 🧐: https://pythontutor.com/python-compiler.html#mode=edit  
+    Debug code 🧐: https://pythontutor.com/python-compiler.html#mode=edit  
     
 """
 
